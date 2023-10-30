@@ -1,0 +1,32 @@
+<div class="h4 text-center mb-4 title" style="font-family: 'Gilroy'; color: black; font-size: 50px;">My Projects</div>
+<div class="section" id="projects" style="background-color: #6F00FF;">
+    <div class="container cc-education">
+        <div class="row">
+            <ng-container *ngFor="let project of projects | paginate: config">
+                <div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft" style="padding-bottom: 30px; font-family: 'Gilroy';">
+                    <div class="blog-entry">
+                        <div class="card" style="background-color: transparent; border: none;">
+                            <video appHoverAutoplay controls>
+                                <source src="{{project.imgUrl}}" type="video/mp4">
+                            </video>
+                            <div class="card-body" style="min-height: 300px; font-family: 'Gilroy'; font-size: larger; color: #f5f2f2;">
+                                <h4 class="card-title" style="font-family: 'Gilroy'; font-size: larger;text-align: justify;">{{project.title}}</h4>
+                                <h5 class="card-text" style="font-family: 'Gilroy'; font-size: medium;text-align: justify;"><b>Technology:</b> {{project.technology}} </h5>
+                                <h5 class="card-text" style="font-family: 'Gilroy'; font-size: small;text-align: justify;"><b>About Project:</b> {{project.description}}</h5>
+                                <div>
+                                    <a href="{{project.githurl}}" class="btn btn-outline-primary" style="margin-left: 180px">
+                                        <fa-icon class="fa fa-github" [icon]="faGithub"></fa-icon>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ng-container>
+        </div>
+        <!-- Centered pagination controls -->
+        <div class="text-center" style="font-family: 'Gilroy'; font-weight: bold; color: white;">
+            <pagination-controls (pageChange)="pageChanged($event)" style="margin-bottom: 100px;"></pagination-controls>
+        </div><br>
+    </div>
+</div><br>
