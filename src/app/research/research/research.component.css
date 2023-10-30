@@ -1,0 +1,20 @@
+.card {
+    border: none;
+    overflow-x:hidden;
+    border: 0;
+    border-radius: 0.1875rem;
+    background-color: transparent;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    /* width: 60%; */
+    /* height: 700px; */
+    margin-bottom: 20px;
+    /* margin-left: 280px; */
+    font-size: 14px;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    -webkit-box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+
+            margin-top: 1em;
+  }

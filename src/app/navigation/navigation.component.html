@@ -1,0 +1,64 @@
+<mat-sidenav-container class="sidenav-container" style="background-color: white; font-family: 'Gilroy';">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false" style="background-color: #6F00FF; font-family: 'Gilroy';">
+    <!-- <mat-toolbar>Menu</mat-toolbar> -->
+    <!-- <mat-nav-list style="margin-top: 80px;">
+      <a mat-list-item href="#Home" style="margin-bottom: 30px; font-family: 'Gilroy';">Home</a>
+      <a mat-list-item href="#about" style="margin-bottom: 30px; font-family: 'Gilroy';">About</a>
+      <a mat-list-item href="#" style="margin-bottom: 30px; font-family: 'Gilroy';">Projects</a>
+      <a mat-list-item href="#" style="margin-bottom: 30px; font-family: 'Gilroy';">Research Expereince</a>
+    </mat-nav-list> -->
+    <mat-nav-list style="margin-top: 100px;">
+      <a mat-list-item href="#Home" style="margin-top: 30px;">
+        <mat-icon>house</mat-icon>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+        <span style="margin-left: 10px; font-family: 'Gilroy';">Home</span>
+      </a>
+      <a mat-list-item href="#about" style="margin-top: 30px;">
+        <mat-icon>person</mat-icon>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+        <span style="margin-left: 10px; font-family: 'Gilroy';">About</span>
+      </a>
+      <a mat-list-item href="#projects" style="margin-top: 30px;">
+        <mat-icon>code</mat-icon>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+        <span style="margin-left: 10px; font-family: 'Gilroy';">Projects</span>
+      </a>
+      <a mat-list-item href="#research" style="margin-top:30px;">
+        <mat-icon>science</mat-icon>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span style="margin-left: 10px; font-family: 'Gilroy';">Research Experiences</span>
+      </a>
+      <a mat-list-item href="#work" style="margin-top:30px;">
+        <mat-icon>work</mat-icon> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+        <span style="margin-left: 10px; font-family: 'Gilroy';">Work Experiences</span>
+      </a>
+      <a mat-list-item href="#contact" style="margin-top:30px;">
+        <mat-icon>mail</mat-icon>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+        <span style="margin-left: 10px; font-family: 'Gilroy';">Contact</span>
+      </a>
+    </mat-nav-list>
+    
+  </mat-sidenav>
+  
+  <mat-sidenav-content>
+    <mat-toolbar color="primary" style="background-color: #6F00FF;">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <!-- <span>portfolio</span> -->
+    </mat-toolbar> 
+    <app-home></app-home>
+    <app-about></app-about>
+    <app-project></app-project>
+    <app-research></app-research>
+    <app-experience></app-experience>
+    <app-footer></app-footer>
+
+    <!-- Add Content Here -->
+  </mat-sidenav-content>
+ 
+</mat-sidenav-container>

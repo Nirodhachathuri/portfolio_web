@@ -1,0 +1,34 @@
+/* #projects{
+    background-color: rgb(240, 176, 201);
+} */
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: 'Gilroy';
+    
+}
+
+.card video {
+    max-width: 100%;
+    height: 350px;
+}
+
+.card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    
+   
+}
+
+.card-title {
+    flex: 1; /* This makes the title take up remaining space */
+}
+
+.card-text {
+    font-family: 'Gilroy';
+    flex: 2; /* This makes the description and technology sections take up space equally */
+}
