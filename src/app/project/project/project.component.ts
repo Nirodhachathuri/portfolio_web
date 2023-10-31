@@ -42,7 +42,7 @@ export class ProjectComponent implements OnInit {
     title: 'Portfolio',
     description: 'This project is portfolio of mine. It is created using angular framework. It is include my details with my projects and experience. It is help to identify the employers to my skills and knowledge using this portfolio. This portfolio helps to explain the more details about my skills knowledge than my cv.',
     imgUrl:'/assets/videos/Farmer.mp4',
-    technology:'Angular, typescript, html, css',
+    technology:'Angular, typescript, html, css, Docker, Google Clouds',
     githurl:"https://github.com/Nirodhachathuri/Portfolio-Angular"
   
   },
