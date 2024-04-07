@@ -23,6 +23,7 @@ import { HoverAutoplayDirective } from './project/hover-autoplay.directive';
 import { FooterComponent } from './footer/footer.component';
 import { ExperienceComponent } from './experience/experience/experience.component';
 import { ResearchComponent } from './research/research/research.component';
+import { SkillsComponent } from './skills/skills/skills.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { ResearchComponent } from './research/research/research.component';
     HoverAutoplayDirective,
     FooterComponent,
     ExperienceComponent,
-    ResearchComponent
+    ResearchComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,14 @@
+<div id="skills" class="h4 text-center mb-4 title"
+    style="margin-top: 100px; font-family: 'Gilroy'; color: black; font-size: 50px;">Skills</div>
+    <div class="skills">
+        <div class="skill" *ngFor="let skill of skills">
+          <div class="skill-name">{{ skill.skillName }}</div>
+          <div class="progress-bar">
+            <div class="circle" [style.transform]="'rotate(' + (skill.percentage * 1.8) + 'deg)'">
+              <div class="progress">{{ skill.percentage }}%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
