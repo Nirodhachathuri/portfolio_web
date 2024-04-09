@@ -24,6 +24,8 @@ import { FooterComponent } from './footer/footer.component';
 import { ExperienceComponent } from './experience/experience/experience.component';
 import { ResearchComponent } from './research/research/research.component';
 import { SkillsComponent } from './skills/skills/skills.component';
+import {  IgxProgressBarModule } from 'igniteui-angular';
+import { NgCircleProgressModule } from 'ng-circle-progress';
 
 
 @NgModule({
@@ -52,7 +54,18 @@ import { SkillsComponent } from './skills/skills/skills.component';
     MatMenuModule,
     NgxPaginationModule,
     FontAwesomeModule,
-  ],
+    IgxProgressBarModule,
+    NgCircleProgressModule.forRoot({
+      
+      radius: 100,
+      outerStrokeWidth: 16,
+      innerStrokeWidth: 8,
+      outerStrokeColor: "#78C000",
+      innerStrokeColor: "#C7E596",
+      animationDuration: 300,
+
+    })
+      ],
   exports: [MatSidenavContainer],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,14 +1,18 @@
-<div id="skills" class="h4 text-center mb-4 title"
-    style="margin-top: 100px; font-family: 'Gilroy'; color: black; font-size: 50px;">Skills</div>
-    <div class="skills">
-        <div class="skill" *ngFor="let skill of skills">
-          <div class="skill-name">{{ skill.skillName }}</div>
-          <div class="progress-bar">
-            <div class="circle" [style.transform]="'rotate(' + (skill.percentage * 1.8) + 'deg)'">
-              <div class="progress">{{ skill.percentage }}%</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      
+<div id="skills" class="h4 text-center mb-4 title" style="margin-top: 100px; font-family: 'Gilroy'; color: black; font-size: 50px;">Skills</div>
+<div class="skills" style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+  <div class="skill" style="width: calc(25% - 10px); margin-bottom: 20px;" *ngFor="let skill of skills">
+    <circle-progress
+      [percent]="skill.percentage"
+      [radius]="50"
+      [outerStrokeWidth]="16"
+      [innerStrokeWidth]="8"
+      [outerStrokeColor]="'#78C000'"
+      [innerStrokeColor]="'#C7E596'"
+      [animation]="true"
+      [animationDuration]="300"
+    ></circle-progress>
+    <div class="skill-details">
+      <div class="skill-name" style="font-size: 16px; font-weight: bold;">{{ skill.skillName }}</div>
+    </div>
+  </div>
+</div>

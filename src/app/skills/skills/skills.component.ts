@@ -27,5 +27,30 @@ export class SkillsComponent implements OnInit {
   id:3,
   skillName: 'CSS',
   percentage: 85,
+},
+{
+  id:4,
+  skillName: 'Tyescript',
+  percentage: 90,
+},
+{
+  id:5,
+  skillName: 'JavaScript',
+  percentage: 85,
+},
+{
+  id:6,
+  skillName: 'Python',
+  percentage: 90,
+},
+{
+  id:7,
+  skillName: 'R -studio',
+  percentage: 90,
+},
+{
+  id:8,
+  skillName: 'Communication Skills',
+  percentage: 90,
 }]
 }
