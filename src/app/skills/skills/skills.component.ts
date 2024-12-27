@@ -11,7 +11,17 @@ export class SkillsComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    
+    this.sortSkillsByPercentage();
+  }
+  sortSkillsByPercentage(): void {
+    this.skills.sort((a, b) => b.percentage - a.percentage); // Descending order
+  }
+  getOuterStrokeColor(): string {
+    return '#9b69d9'; // Purple
+  }
+
+  getInnerStrokeColor(): string {
+    return '#bda1df'; // Lighter purple
   }
   skills: any=[{
     id:1,

@@ -1,29 +1,28 @@
-.card {
-  width: 200px;
-  margin: 10px;
-}
 .skills {
   display: flex;
-  justify-content: space-around;
-}
-
-.skill-details {
-  text-align: center;
-  margin-top: 10px; /* Adjust as needed */
+  flex-wrap: wrap;
+  justify-content: center; /* Center align the skills */
+  gap: 20px; /* Space between skills */
 }
 
 .skill {
+  width: calc(50% - 20px); /* Two items per row */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.card {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  align-items: center;
+}
+
+.skill-details {
+  margin-top: 10px;
 }
 
 .skill-name {
   font-weight: bold;
+  font-size: 16px;
   color: black;
-}
-
-.percentage {
-  font-size: 12px; /* Adjust font size as needed */
-  color: green; /* Change color to green */
 }
