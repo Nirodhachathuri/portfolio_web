@@ -1,0 +1,28 @@
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center align the skills */
+  gap: 20px; /* Space between skills */
+}
+
+.skill {
+  width: calc(50% - 20px); /* Two items per row */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-details {
+  margin-top: 10px;
+}
+
+.skill-name {
+  font-weight: bold;
+  font-size: 16px;
+  color: black;
+}

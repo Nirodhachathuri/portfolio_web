@@ -2,7 +2,7 @@
   <mat-sidenav #drawer class="sidenav" fixedInViewport
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
-      [opened]="(isHandset$ | async) === false" style="background-color: #6F00FF; font-family: 'Gilroy';">
+      [opened]="(isHandset$ | async) === false" style="background-color: #a26ae6; font-family: 'Gilroy';">
     <!-- <mat-toolbar>Menu</mat-toolbar> -->
     <!-- <mat-nav-list style="margin-top: 80px;">
       <a mat-list-item href="#Home" style="margin-bottom: 30px; font-family: 'Gilroy';">Home</a>
@@ -31,6 +31,10 @@
         <mat-icon>work</mat-icon> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
         <span style="margin-left: 10px; font-family: 'Gilroy';">Work Experiences</span>
       </a>
+      <a mat-list-item href="#skills" style="margin-top:30px;">
+        <mat-icon>work</mat-icon> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+        <span style="margin-left: 10px; font-family: 'Gilroy';">Skills</span>
+      </a>
       <a mat-list-item href="#contact" style="margin-top:30px;">
         <mat-icon>mail</mat-icon>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
         <span style="margin-left: 10px; font-family: 'Gilroy';">Contact</span>
@@ -40,7 +44,7 @@
   </mat-sidenav>
   
   <mat-sidenav-content>
-    <mat-toolbar color="primary" style="background-color: #6F00FF;">
+    <mat-toolbar color="primary" style="background-color: #a26ae6;">
       <button
         type="button"
         aria-label="Toggle sidenav"
@@ -56,6 +60,7 @@
     <app-project></app-project>
     <app-research></app-research>
     <app-experience></app-experience>
+    <app-skills></app-skills>
     <app-footer></app-footer>
 
     <!-- Add Content Here -->

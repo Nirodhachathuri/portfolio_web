@@ -1,7 +1,7 @@
 :host{
     display: block;
     padding: 4rem 2rem 6rem;
-    background: #6F00FF;
+    background: #9b69d9;
     overflow-x:hidden;
     clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 50% 100%,0% 95%);
 }

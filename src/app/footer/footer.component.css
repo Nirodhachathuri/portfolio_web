@@ -1,10 +1,10 @@
 .footer {
     padding: 24px 0;
-    background-color: #6F00FF;
+    background-color: #a26ae6;
   }
   
   .footer.footer-default {
-    background-color: #ece9f0;
+    background-color: hsl(266, 19%, 93%);
   }
   
   .footer nav {
